@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" minHeight="650.0" prefWidth="820.0" spacing="20.0" style="-fx-background-color: #F6CFFC;"
+      xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.testux.mainViewController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fuel Queue System" textAlignment="CENTER" textOrigin="CENTER"
+          wrappingWidth="775.9370956420898">
+        <font>
+            <Font name="Century Gothic Bold" size="52.0"/>
+        </font>
+    </Text>
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search">
+        <VBox.margin>
+            <Insets bottom="-20.0"/>
+        </VBox.margin>
+    </Text>
+    <TextField fx:id="searchField" alignment="CENTER" maxWidth="234.0" minWidth="20.0" nodeOrientation="LEFT_TO_RIGHT"
+               prefHeight="26.0" prefWidth="234.0"
+               style="-fx-background-color: #F6CFFC; -fx-border-color: #BFA1C4; -fx-border-radius: 20;"/>
+    <TableView fx:id="tableView" prefHeight="450.0" prefWidth="772.0">
+        <columns>
+            <TableColumn fx:id="firstNameCol" prefWidth="220.0" text="First Name"/>
+            <TableColumn fx:id="lastNameCol" prefWidth="220.0" text="Last Name"/>
+            <TableColumn fx:id="vehicleNoCol" prefWidth="128.0" text="Vehicle No."/>
+            <TableColumn fx:id="litreCol" prefWidth="100.0" text="Litres"/>
+            <TableColumn fx:id="queueCol" minWidth="0.0" prefWidth="90.0" text="Queue"/>
+        </columns>
+    </TableView>
+</VBox>
