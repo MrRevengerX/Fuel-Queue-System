@@ -6,3 +6,5 @@ module com.example.testux {
     opens com.example.testux to javafx.fxml;
     exports com.example.testux;
 }
+
+//

@@ -2,11 +2,12 @@ package com.example.testux;
 
 import java.util.ArrayList;
 
+//
 //Pump Object
 public class Pump {
 
     //    ArrayList to store passenger object relevant to the queue
-    private ArrayList<Passenger> pumpQueue =new ArrayList<Passenger>();
+    private ArrayList<Passenger> pumpQueue = new ArrayList<Passenger>();
 
     private int queueLength;
 
@@ -17,19 +18,19 @@ public class Pump {
 
     //    Creating Passenger objects and add it to ArrayList
     public void addPassenger(String passengerFirstName, String passengerLastName, String vehicleNumber, int noOfLiters) {
-        if (pumpQueue.size()<queueLength){
-            pumpQueue.add(new Passenger(passengerFirstName,passengerLastName,vehicleNumber,noOfLiters));
-        }else {
+        if (pumpQueue.size() < queueLength) {
+            pumpQueue.add(new Passenger(passengerFirstName, passengerLastName, vehicleNumber, noOfLiters));
+        } else {
             System.out.println("Array is full");
         }
 
     }
 
-    public int size(){
+    public int size() {
         return pumpQueue.size();
     }
 
-    public Passenger getPassenger(int passengerIndex){
+    public Passenger getPassenger(int passengerIndex) {
         return pumpQueue.get(passengerIndex);
     }
 
@@ -37,15 +38,15 @@ public class Pump {
         return queueLength;
     }
 
-    public int getNoOfEmpty(){
-        return queueLength- pumpQueue.size();
+    public int getNoOfEmpty() {
+        return queueLength - pumpQueue.size();
     }
 
-    public void remove(int index){
+    public void remove(int index) {
         pumpQueue.remove(index);
     }
 
-    public void reset(){
+    public void reset() {
         pumpQueue.clear();
     }
 

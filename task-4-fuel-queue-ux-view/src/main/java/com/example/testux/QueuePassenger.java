@@ -1,5 +1,6 @@
 package com.example.testux;
 
+//
 public class QueuePassenger {
     private String passengerFirstName;
     private String passengerLastName;
